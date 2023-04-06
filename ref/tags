@@ -1,0 +1,354 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AES256CTR_BLOCKBYTES	aes256ctr.h	7;"	d
+AES256CTR_H	aes256ctr.h	2;"	d
+AES256CTR_NAMESPACE	aes256ctr.h	9;"	d
+AES256_CTR_DRBG_Update	rng.c	/^AES256_CTR_DRBG_Update(unsigned char *provided_data,$/;"	f
+AES256_CTR_DRBG_struct	rng.h	/^} AES256_CTR_DRBG_struct;$/;"	t	typeref:struct:__anon6
+AES256_ECB	rng.c	/^AES256_ECB(unsigned char *key, unsigned char *ctr, unsigned char *buffer)$/;"	f
+AES_XOF_struct	rng.h	/^} AES_XOF_struct;$/;"	t	typeref:struct:__anon5
+API_H	api.h	2;"	d
+CBD_H	cbd.h	2;"	d
+CC	Makefile	/^CC=\/usr\/bin\/gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -O0 -g3 -march=native -fomit-frame-pointer$/;"	m
+CRYPTO_ALGNAME	api.h	13;"	d
+CRYPTO_ALGNAME	api.h	15;"	d
+CRYPTO_ALGNAME	api.h	19;"	d
+CRYPTO_ALGNAME	api.h	21;"	d
+CRYPTO_ALGNAME	api.h	25;"	d
+CRYPTO_ALGNAME	api.h	27;"	d
+CRYPTO_BYTES	api.h	9;"	d
+CRYPTO_CIPHERTEXTBYTES	api.h	8;"	d
+CRYPTO_PUBLICKEYBYTES	api.h	7;"	d
+CRYPTO_SECRETKEYBYTES	api.h	6;"	d
+Ch	sha256.c	28;"	d	file:
+Ch	sha512.c	38;"	d	file:
+DRBG_ctx	rng.c	/^AES256_CTR_DRBG_struct  DRBG_ctx;$/;"	v
+EXPAND	sha256.c	37;"	d	file:
+EXPAND	sha512.c	47;"	d	file:
+F	sha256.c	55;"	d	file:
+F	sha512.c	65;"	d	file:
+FIPS202_H	fips202.h	2;"	d
+FIPS202_NAMESPACE	fips202.h	7;"	d
+FindMarker	PQCgenKAT_kem.c	/^FindMarker(FILE *infile, const char *marker)$/;"	f
+GEN_MATRIX_NBLOCKS	indcpa.c	174;"	d	file:
+HEADERS	Makefile	/^HEADERS= api.h cbd.h fips202.h indcpa.h ntt.h params.h poly.h polyvec.h reduce.h rng.h verify.h symmetric.h$/;"	m
+INDCPA_H	indcpa.h	2;"	d
+KAT_CRYPTO_FAILURE	PQCgenKAT_kem.c	19;"	d	file:
+KAT_DATA_ERROR	PQCgenKAT_kem.c	18;"	d	file:
+KAT_FILE_OPEN_ERROR	PQCgenKAT_kem.c	17;"	d	file:
+KAT_SUCCESS	PQCgenKAT_kem.c	16;"	d	file:
+KEM_H	kem.h	2;"	d
+KYBER_CIPHERTEXTBYTES	params.h	70;"	d
+KYBER_ETA1	params.h	44;"	d
+KYBER_ETA1	params.h	48;"	d
+KYBER_ETA1	params.h	52;"	d
+KYBER_ETA2	params.h	57;"	d
+KYBER_INDCPA_BYTES	params.h	62;"	d
+KYBER_INDCPA_MSGBYTES	params.h	59;"	d
+KYBER_INDCPA_PUBLICKEYBYTES	params.h	60;"	d
+KYBER_INDCPA_SECRETKEYBYTES	params.h	61;"	d
+KYBER_K	params.h	5;"	d
+KYBER_N	params.h	33;"	d
+KYBER_NAMESPACE	params.h	13;"	d
+KYBER_NAMESPACE	params.h	15;"	d
+KYBER_NAMESPACE	params.h	19;"	d
+KYBER_NAMESPACE	params.h	21;"	d
+KYBER_NAMESPACE	params.h	25;"	d
+KYBER_NAMESPACE	params.h	27;"	d
+KYBER_POLYBYTES	params.h	40;"	d
+KYBER_POLYCOMPRESSEDBYTES	params.h	45;"	d
+KYBER_POLYCOMPRESSEDBYTES	params.h	49;"	d
+KYBER_POLYCOMPRESSEDBYTES	params.h	53;"	d
+KYBER_POLYVECBYTES	params.h	41;"	d
+KYBER_POLYVECCOMPRESSEDBYTES	params.h	46;"	d
+KYBER_POLYVECCOMPRESSEDBYTES	params.h	50;"	d
+KYBER_POLYVECCOMPRESSEDBYTES	params.h	54;"	d
+KYBER_PUBLICKEYBYTES	params.h	65;"	d
+KYBER_Q	params.h	34;"	d
+KYBER_SECRETKEYBYTES	params.h	67;"	d
+KYBER_SSBYTES	params.h	38;"	d
+KYBER_SYMBYTES	params.h	37;"	d
+KeccakF1600_StatePermute	fips202.c	/^static void KeccakF1600_StatePermute(uint64_t state[25])$/;"	f	file:
+KeccakF_RoundConstants	fips202.c	/^static const uint64_t KeccakF_RoundConstants[NROUNDS] = {$/;"	v	file:
+Key	rng.h	/^    unsigned char   Key[32];$/;"	m	struct:__anon6
+LDFLAGS	Makefile	/^LDFLAGS=-lcrypto$/;"	m
+M	sha256.c	35;"	d	file:
+M	sha512.c	45;"	d	file:
+MAX_MARKER_LEN	PQCgenKAT_kem.c	15;"	d	file:
+MONT	reduce.h	7;"	d
+Maj	sha256.c	29;"	d	file:
+Maj	sha512.c	39;"	d	file:
+NROUNDS	fips202.c	12;"	d	file:
+NTESTS	test_speed.c	14;"	d	file:
+NTT_H	ntt.h	2;"	d
+PARAMS_H	params.h	2;"	d
+POLYVEC_H	polyvec.h	2;"	d
+POLY_H	poly.h	2;"	d
+PRINT_IV	indcpa.c	208;"	d	file:
+PRINT_SPEED_H	speed_print.h	2;"	d
+QINV	reduce.h	8;"	d
+REDUCE_H	reduce.h	2;"	d
+RNG_BAD_MAXLEN	rng.h	14;"	d
+RNG_BAD_OUTBUF	rng.h	15;"	d
+RNG_BAD_REQ_LEN	rng.h	16;"	d
+RNG_SUCCESS	rng.h	13;"	d
+ROL	fips202.c	13;"	d	file:
+ROTR	sha256.c	26;"	d	file:
+ROTR	sha512.c	36;"	d	file:
+Rcon	aes256ctr.c	/^static const uint8_t Rcon[] = {$/;"	v	file:
+ReadHex	PQCgenKAT_kem.c	/^ReadHex(FILE *infile, unsigned char *A, int Length, char *str)$/;"	f
+SHA2_NAMESPACE	sha2.h	7;"	d
+SHA3_256_RATE	fips202.h	11;"	d
+SHA3_512_RATE	fips202.h	12;"	d
+SHAKE128_RATE	fips202.h	9;"	d
+SHAKE256_RATE	fips202.h	10;"	d
+SHA_2_H	sha2.h	2;"	d
+SHR	sha256.c	25;"	d	file:
+SHR	sha512.c	35;"	d	file:
+SOURCES	Makefile	/^SOURCES= cbd.c fips202.c indcpa.c kem.c ntt.c poly.c polyvec.c PQCgenKAT_kem.c reduce.c rng.c verify.c symmetric-shake.c$/;"	m
+SWAP2	aes256ctr.c	253;"	d	file:
+SWAP4	aes256ctr.c	254;"	d	file:
+SWAP8	aes256ctr.c	255;"	d	file:
+SWAPN	aes256ctr.c	245;"	d	file:
+SYMMETRIC_H	symmetric.h	2;"	d
+Sigma0	sha256.c	30;"	d	file:
+Sigma0	sha512.c	40;"	d	file:
+Sigma1	sha256.c	31;"	d	file:
+Sigma1	sha512.c	41;"	d	file:
+V	rng.h	/^    unsigned char   V[16];$/;"	m	struct:__anon6
+VERIFY_H	verify.h	2;"	d
+XOF_BLOCKBYTES	symmetric.h	31;"	d
+XOF_BLOCKBYTES	symmetric.h	61;"	d
+_PRINTIV_H	printIV.h	2;"	d
+add_round_key	aes256ctr.c	/^static inline void add_round_key(uint64_t *q, const uint64_t *sk)$/;"	f	file:
+aes256ctr_ctx	aes256ctr.h	/^} aes256ctr_ctx;$/;"	t	typeref:struct:__anon1
+aes256ctr_init	aes256ctr.c	/^void aes256ctr_init(aes256ctr_ctx *s, const uint8_t *key, const uint8_t *nonce)$/;"	f
+aes256ctr_init	aes256ctr.h	22;"	d
+aes256ctr_prf	aes256ctr.c	/^void aes256ctr_prf(uint8_t *out, size_t outlen, const uint8_t *key, const uint8_t *nonce)$/;"	f
+aes256ctr_prf	aes256ctr.h	16;"	d
+aes256ctr_squeezeblocks	aes256ctr.c	/^void aes256ctr_squeezeblocks(uint8_t *out, size_t nblocks, aes256ctr_ctx *s)$/;"	f
+aes256ctr_squeezeblocks	aes256ctr.h	27;"	d
+aes_ctr4x	aes256ctr.c	/^static void aes_ctr4x(uint8_t out[64], uint32_t ivw[16], uint64_t sk_exp[64])$/;"	f	file:
+average	speed_print.c	/^static uint64_t average(uint64_t *t, size_t tlen) {$/;"	f	file:
+barrett_reduce	reduce.c	/^int16_t barrett_reduce(int16_t a) {$/;"	f
+barrett_reduce	reduce.h	13;"	d
+basemul	ntt.c	/^void basemul(int16_t r[2],$/;"	f
+basemul	ntt.h	19;"	d
+blocks	sha256.c	216;"	d	file:
+blocks	sha512.c	245;"	d	file:
+br_aes_ct64_bitslice_Sbox	aes256ctr.c	/^static void br_aes_ct64_bitslice_Sbox(uint64_t *q)$/;"	f	file:
+br_aes_ct64_ctr_init	aes256ctr.c	/^static void br_aes_ct64_ctr_init(uint64_t sk_exp[120], const uint8_t *key)$/;"	f	file:
+br_aes_ct64_ctr_run	aes256ctr.c	/^static void br_aes_ct64_ctr_run(uint64_t sk_exp[120], const uint8_t *iv, uint32_t cc, uint8_t *data, size_t len)$/;"	f	file:
+br_aes_ct64_interleave_in	aes256ctr.c	/^static void br_aes_ct64_interleave_in(uint64_t *q0, uint64_t *q1, const uint32_t *w)$/;"	f	file:
+br_aes_ct64_interleave_out	aes256ctr.c	/^static void br_aes_ct64_interleave_out(uint32_t *w, uint64_t q0, uint64_t q1)$/;"	f	file:
+br_aes_ct64_keysched	aes256ctr.c	/^static void br_aes_ct64_keysched(uint64_t *comp_skey, const uint8_t *key)$/;"	f	file:
+br_aes_ct64_ortho	aes256ctr.c	/^static void br_aes_ct64_ortho(uint64_t *q)$/;"	f	file:
+br_aes_ct64_skey_expand	aes256ctr.c	/^static void br_aes_ct64_skey_expand(uint64_t *skey, const uint64_t *comp_skey)$/;"	f	file:
+br_dec32le	aes256ctr.c	/^static inline uint32_t br_dec32le(const uint8_t *src)$/;"	f	file:
+br_enc32le	aes256ctr.c	/^static inline void br_enc32le(uint8_t *dst, uint32_t x)$/;"	f	file:
+br_range_dec32le	aes256ctr.c	/^static void br_range_dec32le(uint32_t *v, size_t num, const uint8_t *src)$/;"	f	file:
+br_range_enc32le	aes256ctr.c	/^static void br_range_enc32le(uint8_t *dst, const uint32_t *v, size_t num)$/;"	f	file:
+br_swap32	aes256ctr.c	/^static inline uint32_t br_swap32(uint32_t x)$/;"	f	file:
+buffer	rng.h	/^    unsigned char   buffer[16];$/;"	m	struct:__anon5
+buffer_pos	rng.h	/^    int             buffer_pos;$/;"	m	struct:__anon5
+cbd2	cbd.c	/^static void cbd2(poly *r, const uint8_t buf[2*KYBER_N\/4])$/;"	f	file:
+cbd3	cbd.c	/^static void cbd3(poly *r, const uint8_t buf[3*KYBER_N\/4])$/;"	f	file:
+cbd_eta1	cbd.c	/^void cbd_eta1(poly *r, const uint8_t buf[KYBER_ETA1*KYBER_N\/4])$/;"	f
+cbd_eta1	cbd.h	8;"	d
+cbd_eta2	cbd.c	/^void cbd_eta2(poly *r, const uint8_t buf[KYBER_ETA1*KYBER_N\/4])$/;"	f
+cbd_eta2	cbd.h	11;"	d
+cmov	verify.c	/^void cmov(uint8_t *r, const uint8_t *x, size_t len, uint8_t b)$/;"	f
+cmov	verify.h	11;"	d
+cmp_uint64	speed_print.c	/^static int cmp_uint64(const void *a, const void *b) {$/;"	f	file:
+coeffs	poly.h	/^  int16_t coeffs[KYBER_N];$/;"	m	struct:__anon3
+crypto_hashblocks_sha256	sha256.c	/^static int crypto_hashblocks_sha256(uint8_t *statebytes,const uint8_t *in,size_t inlen)$/;"	f	file:
+crypto_hashblocks_sha512	sha512.c	/^static int crypto_hashblocks_sha512(uint8_t *statebytes,const uint8_t *in,size_t inlen)$/;"	f	file:
+crypto_kem_dec	api.h	39;"	d
+crypto_kem_dec	kem.c	/^int crypto_kem_dec(unsigned char *ss,$/;"	f
+crypto_kem_dec	kem.h	14;"	d
+crypto_kem_enc	api.h	34;"	d
+crypto_kem_enc	kem.c	/^int crypto_kem_enc(unsigned char *ct,$/;"	f
+crypto_kem_enc	kem.h	9;"	d
+crypto_kem_keypair	api.h	31;"	d
+crypto_kem_keypair	kem.c	/^int crypto_kem_keypair(unsigned char *pk, unsigned char *sk)$/;"	f
+crypto_kem_keypair	kem.h	6;"	d
+csubq	reduce.c	/^int16_t csubq(int16_t a) {$/;"	f
+csubq	reduce.h	16;"	d
+ctr	rng.h	/^    unsigned char   ctr[16];$/;"	m	struct:__anon5
+fprintBstr	PQCgenKAT_kem.c	/^fprintBstr(FILE *fp, char *S, unsigned char *A, unsigned long long L)$/;"	f
+fqmul	ntt.c	/^static int16_t fqmul(int16_t a, int16_t b) {$/;"	f	file:
+gen_a	indcpa.c	158;"	d	file:
+gen_at	indcpa.c	159;"	d	file:
+gen_matrix	indcpa.c	/^void gen_matrix(polyvec *a, const uint8_t seed[KYBER_SYMBYTES], int transposed)$/;"	f
+gen_matrix	indcpa.h	8;"	d
+handleErrors	rng.c	/^void handleErrors(void)$/;"	f
+hash_g	symmetric.h	34;"	d
+hash_g	symmetric.h	64;"	d
+hash_h	symmetric.h	33;"	d
+hash_h	symmetric.h	63;"	d
+inc4_be	aes256ctr.c	/^static void inc4_be(uint32_t *x)$/;"	f	file:
+indcpa_dec	indcpa.c	/^void indcpa_dec(uint8_t m[KYBER_INDCPA_MSGBYTES],$/;"	f
+indcpa_dec	indcpa.h	20;"	d
+indcpa_enc	indcpa.c	/^void indcpa_enc(uint8_t c[KYBER_INDCPA_BYTES],$/;"	f
+indcpa_enc	indcpa.h	14;"	d
+indcpa_keypair	indcpa.c	/^void indcpa_keypair(uint8_t pk[KYBER_INDCPA_PUBLICKEYBYTES],$/;"	f
+indcpa_keypair	indcpa.h	10;"	d
+invntt	ntt.c	/^void invntt(int16_t r[256]) {$/;"	f
+invntt	ntt.h	16;"	d
+iv	sha256.c	/^static const uint8_t iv[32] = {$/;"	v	file:
+iv	sha512.c	/^static const uint8_t iv[64] = {$/;"	v	file:
+ivw	aes256ctr.h	/^  uint32_t ivw[16];$/;"	m	struct:__anon1
+kdf	symmetric.h	41;"	d
+kdf	symmetric.h	70;"	d
+keccak_absorb	fips202.c	/^static void keccak_absorb(uint64_t s[25],$/;"	f	file:
+keccak_squeezeblocks	fips202.c	/^static void keccak_squeezeblocks(uint8_t *out,$/;"	f	file:
+keccak_state	fips202.h	/^} keccak_state;$/;"	t	typeref:struct:__anon2
+key	rng.h	/^    unsigned char   key[32];$/;"	m	struct:__anon5
+kyber_aes256ctr_prf	symmetric-aes.c	/^void kyber_aes256ctr_prf(uint8_t *out,$/;"	f
+kyber_aes256ctr_prf	symmetric.h	25;"	d
+kyber_aes256xof_absorb	symmetric-aes.c	/^void kyber_aes256xof_absorb(aes256ctr_ctx *state,$/;"	f
+kyber_aes256xof_absorb	symmetric.h	19;"	d
+kyber_shake128_absorb	symmetric-shake.c	/^void kyber_shake128_absorb(keccak_state *state,$/;"	f
+kyber_shake128_absorb	symmetric.h	49;"	d
+kyber_shake256_prf	symmetric-shake.c	/^void kyber_shake256_prf(uint8_t *out,$/;"	f
+kyber_shake256_prf	symmetric.h	55;"	d
+length_remaining	rng.h	/^    unsigned long   length_remaining;$/;"	m	struct:__anon5
+load24_littleendian	cbd.c	/^static uint32_t load24_littleendian(const uint8_t x[3])$/;"	f	file:
+load32_littleendian	cbd.c	/^static uint32_t load32_littleendian(const uint8_t x[4])$/;"	f	file:
+load64	fips202.c	/^static uint64_t load64(const uint8_t x[8]) {$/;"	f	file:
+load_bigendian	sha256.c	/^static uint32_t load_bigendian(const uint8_t *x)$/;"	f	file:
+load_bigendian	sha512.c	/^static uint64_t load_bigendian(const uint8_t *x)$/;"	f	file:
+main	PQCgenKAT_kem.c	/^main()$/;"	f
+main	test_speed.c	/^int main()$/;"	f
+median	speed_print.c	/^static uint64_t median(uint64_t *l, size_t llen) {$/;"	f	file:
+mix_columns	aes256ctr.c	/^static inline void mix_columns(uint64_t *q)$/;"	f	file:
+montgomery_reduce	reduce.c	/^int16_t montgomery_reduce(int32_t a)$/;"	f
+montgomery_reduce	reduce.h	10;"	d
+ntt	ntt.c	/^void ntt(int16_t r[256]) {$/;"	f
+ntt	ntt.h	13;"	d
+pack_ciphertext	indcpa.c	/^static void pack_ciphertext(uint8_t r[KYBER_INDCPA_BYTES],$/;"	f	file:
+pack_pk	indcpa.c	/^static void pack_pk(uint8_t r[KYBER_INDCPA_PUBLICKEYBYTES],$/;"	f	file:
+pack_sk	indcpa.c	/^static void pack_sk(uint8_t r[KYBER_INDCPA_SECRETKEYBYTES], polyvec *sk)$/;"	f	file:
+poly	poly.h	/^} poly;$/;"	t	typeref:struct:__anon3
+poly_add	poly.c	/^void poly_add(poly *r, const poly *a, const poly *b)$/;"	f
+poly_add	poly.h	50;"	d
+poly_basemul_montgomery	poly.c	/^void poly_basemul_montgomery(poly *r, const poly *a, const poly *b)$/;"	f
+poly_basemul_montgomery	poly.h	40;"	d
+poly_compress	poly.c	/^void poly_compress(uint8_t r[KYBER_POLYCOMPRESSEDBYTES], poly *a)$/;"	f
+poly_compress	poly.h	15;"	d
+poly_csubq	poly.c	/^void poly_csubq(poly *r)$/;"	f
+poly_csubq	poly.h	47;"	d
+poly_decompress	poly.c	/^void poly_decompress(poly *r, const uint8_t a[KYBER_POLYCOMPRESSEDBYTES])$/;"	f
+poly_decompress	poly.h	17;"	d
+poly_frombytes	poly.c	/^void poly_frombytes(poly *r, const uint8_t a[KYBER_POLYBYTES])$/;"	f
+poly_frombytes	poly.h	22;"	d
+poly_frommsg	poly.c	/^void poly_frommsg(poly *r, const uint8_t msg[KYBER_INDCPA_MSGBYTES])$/;"	f
+poly_frommsg	poly.h	25;"	d
+poly_getnoise_eta1	poly.c	/^void poly_getnoise_eta1(poly *r, const uint8_t seed[KYBER_SYMBYTES], uint8_t nonce)$/;"	f
+poly_getnoise_eta1	poly.h	30;"	d
+poly_getnoise_eta2	poly.c	/^void poly_getnoise_eta2(poly *r, const uint8_t seed[KYBER_SYMBYTES], uint8_t nonce)$/;"	f
+poly_getnoise_eta2	poly.h	33;"	d
+poly_invntt_tomont	poly.c	/^void poly_invntt_tomont(poly *r)$/;"	f
+poly_invntt_tomont	poly.h	38;"	d
+poly_ntt	poly.c	/^void poly_ntt(poly *r)$/;"	f
+poly_ntt	poly.h	36;"	d
+poly_reduce	poly.c	/^void poly_reduce(poly *r)$/;"	f
+poly_reduce	poly.h	45;"	d
+poly_sub	poly.c	/^void poly_sub(poly *r, const poly *a, const poly *b)$/;"	f
+poly_sub	poly.h	52;"	d
+poly_tobytes	poly.c	/^void poly_tobytes(uint8_t r[KYBER_POLYBYTES], poly *a)$/;"	f
+poly_tobytes	poly.h	20;"	d
+poly_tomont	poly.c	/^void poly_tomont(poly *r)$/;"	f
+poly_tomont	poly.h	42;"	d
+poly_tomsg	poly.c	/^void poly_tomsg(uint8_t msg[KYBER_INDCPA_MSGBYTES], poly *a)$/;"	f
+poly_tomsg	poly.h	27;"	d
+polyvec	polyvec.h	/^} polyvec;$/;"	t	typeref:struct:__anon4
+polyvec_add	polyvec.c	/^void polyvec_add(polyvec *r, const polyvec *a, const polyvec *b)$/;"	f
+polyvec_add	polyvec.h	39;"	d
+polyvec_compress	polyvec.c	/^void polyvec_compress(uint8_t r[KYBER_POLYVECCOMPRESSEDBYTES], polyvec *a)$/;"	f
+polyvec_compress	polyvec.h	12;"	d
+polyvec_csubq	polyvec.c	/^void polyvec_csubq(polyvec *r)$/;"	f
+polyvec_csubq	polyvec.h	36;"	d
+polyvec_decompress	polyvec.c	/^void polyvec_decompress(polyvec *r,$/;"	f
+polyvec_decompress	polyvec.h	14;"	d
+polyvec_frombytes	polyvec.c	/^void polyvec_frombytes(polyvec *r, const uint8_t a[KYBER_POLYVECBYTES])$/;"	f
+polyvec_frombytes	polyvec.h	20;"	d
+polyvec_invntt_tomont	polyvec.c	/^void polyvec_invntt_tomont(polyvec *r)$/;"	f
+polyvec_invntt_tomont	polyvec.h	25;"	d
+polyvec_ntt	polyvec.c	/^void polyvec_ntt(polyvec *r)$/;"	f
+polyvec_ntt	polyvec.h	23;"	d
+polyvec_pointwise_acc_montgomery	polyvec.c	/^void polyvec_pointwise_acc_montgomery(poly *r,$/;"	f
+polyvec_pointwise_acc_montgomery	polyvec.h	28;"	d
+polyvec_reduce	polyvec.c	/^void polyvec_reduce(polyvec *r)$/;"	f
+polyvec_reduce	polyvec.h	34;"	d
+polyvec_tobytes	polyvec.c	/^void polyvec_tobytes(uint8_t r[KYBER_POLYVECBYTES], polyvec *a)$/;"	f
+polyvec_tobytes	polyvec.h	18;"	d
+prf	symmetric.h	39;"	d
+prf	symmetric.h	68;"	d
+print_A	printIV.h	/^static void print_A(const polyvec* pv){$/;"	f
+print_bytes	printIV.h	/^static void print_bytes(const char* label, const uint8_t* array, int len){$/;"	f
+print_poly	printIV.h	/^static void print_poly(const char* label, const poly p){$/;"	f
+print_polyvec	printIV.h	/^static void print_polyvec(const char* label, const polyvec pv){$/;"	f
+print_results	speed_print.c	/^void print_results(const char *s, uint64_t *t, size_t tlen) {$/;"	f
+randombytes	rng.c	/^randombytes(unsigned char *x, unsigned long long xlen)$/;"	f
+randombytes_init	rng.c	/^randombytes_init(unsigned char *entropy_input,$/;"	f
+rej_uniform	indcpa.c	/^static unsigned int rej_uniform(int16_t *r,$/;"	f	file:
+reseed_counter	rng.h	/^    int             reseed_counter;$/;"	m	struct:__anon6
+rng_h	rng.h	9;"	d
+rotr32	aes256ctr.c	/^static inline uint64_t rotr32(uint64_t x)$/;"	f	file:
+s	fips202.h	/^  uint64_t s[25];$/;"	m	struct:__anon2
+seed	test_speed.c	/^uint8_t seed[KYBER_SYMBYTES] = {0};$/;"	v
+seedexpander	rng.c	/^seedexpander(AES_XOF_struct *ctx, unsigned char *x, unsigned long xlen)$/;"	f
+seedexpander_init	rng.c	/^seedexpander_init(AES_XOF_struct *ctx,$/;"	f
+sha256	sha2.h	9;"	d
+sha256	sha256.c	/^void sha256(uint8_t *out,const uint8_t *in,size_t inlen)$/;"	f
+sha3_256	fips202.c	/^void sha3_256(uint8_t h[32], const uint8_t *in, size_t inlen)$/;"	f
+sha3_256	fips202.h	31;"	d
+sha3_512	fips202.c	/^void sha3_512(uint8_t *h, const uint8_t *in, size_t inlen)$/;"	f
+sha3_512	fips202.h	33;"	d
+sha512	sha2.h	11;"	d
+sha512	sha512.c	/^void sha512(uint8_t *out,const uint8_t *in,size_t inlen)$/;"	f
+shake128	fips202.c	/^void shake128(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)$/;"	f
+shake128	fips202.h	27;"	d
+shake128_absorb	fips202.c	/^void shake128_absorb(keccak_state *state, const uint8_t *in, size_t inlen)$/;"	f
+shake128_absorb	fips202.h	18;"	d
+shake128_squeezeblocks	fips202.c	/^void shake128_squeezeblocks(uint8_t *out, size_t nblocks, keccak_state *state)$/;"	f
+shake128_squeezeblocks	fips202.h	20;"	d
+shake256	fips202.c	/^void shake256(uint8_t *out, size_t outlen, const uint8_t *in, size_t inlen)$/;"	f
+shake256	fips202.h	29;"	d
+shake256_absorb	fips202.c	/^void shake256_absorb(keccak_state *state, const uint8_t *in, size_t inlen)$/;"	f
+shake256_absorb	fips202.h	23;"	d
+shake256_squeezeblocks	fips202.c	/^void shake256_squeezeblocks(uint8_t *out, size_t nblocks, keccak_state *state)$/;"	f
+shake256_squeezeblocks	fips202.h	25;"	d
+shift_rows	aes256ctr.c	/^static inline void shift_rows(uint64_t *q)$/;"	f	file:
+sigma0	sha256.c	32;"	d	file:
+sigma0	sha512.c	42;"	d	file:
+sigma1	sha256.c	33;"	d	file:
+sigma1	sha512.c	43;"	d	file:
+sk_exp	aes256ctr.h	/^  uint64_t sk_exp[120];$/;"	m	struct:__anon1
+store64	fips202.c	/^static void store64(uint8_t x[8], uint64_t u) {$/;"	f	file:
+store_bigendian	sha256.c	/^static void store_bigendian(uint8_t *x,uint32_t u)$/;"	f	file:
+store_bigendian	sha512.c	/^static void store_bigendian(uint8_t *x,uint64_t u)$/;"	f	file:
+sub_word	aes256ctr.c	/^static uint32_t sub_word(uint32_t x)$/;"	f	file:
+t	test_speed.c	/^uint64_t t[NTESTS];$/;"	v
+unpack_ciphertext	indcpa.c	/^static void unpack_ciphertext(polyvec *b,$/;"	f	file:
+unpack_pk	indcpa.c	/^static void unpack_pk(polyvec *pk,$/;"	f	file:
+unpack_sk	indcpa.c	/^static void unpack_sk(polyvec *sk,$/;"	f	file:
+vec	polyvec.h	/^  poly vec[KYBER_K];$/;"	m	struct:__anon4
+verify	verify.c	/^int verify(const uint8_t *a, const uint8_t *b, size_t len)$/;"	f
+verify	verify.h	8;"	d
+xof_absorb	symmetric.h	35;"	d
+xof_absorb	symmetric.h	65;"	d
+xof_squeezeblocks	symmetric.h	37;"	d
+xof_squeezeblocks	symmetric.h	66;"	d
+xof_state	symmetric.h	/^typedef aes256ctr_ctx xof_state;$/;"	t
+xof_state	symmetric.h	/^typedef keccak_state xof_state;$/;"	t
+zetas	ntt.c	/^const int16_t zetas[128] = {$/;"	v
+zetas	ntt.h	7;"	d
+zetas_inv	ntt.c	/^const int16_t zetas_inv[128] = {$/;"	v
+zetas_inv	ntt.h	10;"	d
