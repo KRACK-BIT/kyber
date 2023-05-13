@@ -11,6 +11,8 @@
 #include <openssl/evp.h>
 #include <openssl/err.h>
 
+#include "printIV.h"
+
 AES256_CTR_DRBG_struct  DRBG_ctx;
 
 void    AES256_ECB(unsigned char *key, unsigned char *ctr, unsigned char *buffer);
@@ -142,6 +144,9 @@ randombytes_init(unsigned char *entropy_input,
 {
     unsigned char   seed_material[48];
 
+    printf("----------------NEW_SEED----------------\n");
+    print_bytes("entropy_input = ", entropy_input, 48);
+
     memcpy(seed_material, entropy_input, 48);
     if (personalization_string)
         for (int i=0; i<48; i++)
@@ -150,6 +155,10 @@ randombytes_init(unsigned char *entropy_input,
     memset(DRBG_ctx.V, 0x00, 16);
     AES256_CTR_DRBG_Update(seed_material, DRBG_ctx.Key, DRBG_ctx.V);
     DRBG_ctx.reseed_counter = 1;
+    printf("---Seed_state---\n");
+    print_bytes("Key = ", DRBG_ctx.Key, 32);
+    print_bytes("state = ", DRBG_ctx.V, 16);
+    printf("---SEED_DONE---\n");
 }
 
 int
@@ -158,6 +167,9 @@ randombytes(unsigned char *x, unsigned long long xlen)
     unsigned char   block[16];
     int             i = 0;
 
+    int inital_xlen = xlen;
+
+    printf("----------------NEW_RAND_MATERIAL----------------\n");
     while ( xlen > 0 ) {
         //increment V
         for (int j=15; j>=0; j--) {
@@ -182,6 +194,13 @@ randombytes(unsigned char *x, unsigned long long xlen)
     AES256_CTR_DRBG_Update(NULL, DRBG_ctx.Key, DRBG_ctx.V);
     DRBG_ctx.reseed_counter++;
 
+    printf("---rand_state---\n");
+    printf("bytes: %d\n", inital_xlen);
+    print_bytes("rand_bytes: ", x, inital_xlen);
+    // print_bytes("cur_key: ", DRBG_ctx.Key, 32);
+    // print_bytes("cur_iv: ", DRBG_ctx.V, 16);
+    printf("---RAND_DONE---\n");
+
     return RNG_SUCCESS;
 }
 
@@ -191,6 +210,8 @@ AES256_CTR_DRBG_Update(unsigned char *provided_data,
                        unsigned char *V)
 {
     unsigned char   temp[48];
+
+    printf("Call to shuffle!\n");
 
     for (int i=0; i<3; i++) {
         //increment V
@@ -202,8 +223,9 @@ AES256_CTR_DRBG_Update(unsigned char *provided_data,
                 break;
             }
         }
-
         AES256_ECB(Key, V, temp+16*i);
+        // print_bytes("state = ", V, 16);
+        // print_bytes("temp = ", temp, 48);
     }
     if ( provided_data != NULL )
         for (int i=0; i<48; i++)
