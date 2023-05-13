@@ -1,0 +1,8 @@
+{
+  "makefile.configurations": [
+    {
+      "name": "Kyber",
+      "makefilePath": "${workspaceFolder}/ref/Makefile"
+    }
+  ]
+}
