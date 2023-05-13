@@ -11,10 +11,10 @@
 static void print_bytes(const char* label, const uint8_t* array, int len){
 	printf("%s:", label);
 	for(int i = 0; i < len; ++i){
-		if(i%32 == 0){
-			printf("\n");
-		}
-		printf("%02X ", array[i]);
+		// if(i%32 == 0){
+		// 	printf("\n");
+		// }
+		printf("\\x%02X", array[i]);
 	}
 	printf("\n");
 }

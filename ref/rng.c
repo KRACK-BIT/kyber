@@ -144,8 +144,8 @@ randombytes_init(unsigned char *entropy_input,
 {
     unsigned char   seed_material[48];
 
-    // printf("----------------NEW_SEED----------------\n");
-    // print_bytes("entropy_input = ", entropy_input, 48);
+    printf("----------------NEW_SEED----------------\n");
+    print_bytes("entropy_input = ", entropy_input, 48);
 
     memcpy(seed_material, entropy_input, 48);
     if (personalization_string)

@@ -1,7 +1,15 @@
 {
   "configurations": [
     {
-      "name": "(gdb) Launch",
+      "name": "Run and write to ref/output.txt (after make, in debug shell)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/usr/bin/true",
+      "cwd": "/usr/bin/",
+      "preLaunchTask": "Make, run and write to ref/output.txt"
+    },
+    {
+      "name": "Debug in GDB (after make)",
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/ref/PQCgenKAT_kem",
@@ -25,6 +33,15 @@
       ],
       "preLaunchTask": "Build_with_Makefile"
     }
+
+    // {
+    //   "name": "Make and run executable",
+    //   "command": "./PQCgenKAT_kem > output.txt",
+    //   "cwd": "${workspaceFolder}/ref/",
+    //   "request": "launch",
+    //   "type": "node-terminal",
+    //   "preLaunchTask": "Build_with_Makefile"
+    // }
   ],
   "version": "2.0.0"
 }
