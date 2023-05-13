@@ -1,12 +1,12 @@
 {
   "tasks": [
     {
-      "label": "Build",
+      "label": "Build_with_Makefile",
       "type": "shell",
-      "command": "make", //its like writing in console make //btw you can others commands like clean make build etc
-      "group": {
-        "kind": "build",
-        "isDefault": true
+      "command": "make",
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}/ref/"
       },
       "problemMatcher": {
         "owner": "cpp",

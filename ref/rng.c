@@ -144,8 +144,8 @@ randombytes_init(unsigned char *entropy_input,
 {
     unsigned char   seed_material[48];
 
-    printf("----------------NEW_SEED----------------\n");
-    print_bytes("entropy_input = ", entropy_input, 48);
+    // printf("----------------NEW_SEED----------------\n");
+    // print_bytes("entropy_input = ", entropy_input, 48);
 
     memcpy(seed_material, entropy_input, 48);
     if (personalization_string)
@@ -169,7 +169,7 @@ randombytes(unsigned char *x, unsigned long long xlen)
 
     int inital_xlen = xlen;
 
-    printf("----------------NEW_RAND_MATERIAL----------------\n");
+    // printf("----------------NEW_RAND_MATERIAL----------------\n");
     while ( xlen > 0 ) {
         //increment V
         for (int j=15; j>=0; j--) {
@@ -197,8 +197,8 @@ randombytes(unsigned char *x, unsigned long long xlen)
     printf("---rand_state---\n");
     printf("bytes: %d\n", inital_xlen);
     print_bytes("rand_bytes: ", x, inital_xlen);
-    // print_bytes("cur_key: ", DRBG_ctx.Key, 32);
-    // print_bytes("cur_iv: ", DRBG_ctx.V, 16);
+    print_bytes("cur_key: ", DRBG_ctx.Key, 32);
+    print_bytes("cur_iv: ", DRBG_ctx.V, 16);
     printf("---RAND_DONE---\n");
 
     return RNG_SUCCESS;
@@ -211,7 +211,7 @@ AES256_CTR_DRBG_Update(unsigned char *provided_data,
 {
     unsigned char   temp[48];
 
-    printf("Call to shuffle!\n");
+    // printf("Call to shuffle!\n");
 
     for (int i=0; i<3; i++) {
         //increment V
@@ -224,8 +224,8 @@ AES256_CTR_DRBG_Update(unsigned char *provided_data,
             }
         }
         AES256_ECB(Key, V, temp+16*i);
-        // print_bytes("state = ", V, 16);
-        // print_bytes("temp = ", temp, 48);
+        print_bytes("state = ", V, 16);
+        print_bytes("temp = ", temp, 48);
     }
     if ( provided_data != NULL )
         for (int i=0; i<48; i++)

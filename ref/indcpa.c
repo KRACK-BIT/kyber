@@ -206,9 +206,9 @@ void gen_matrix(polyvec *a, const uint8_t seed[KYBER_SYMBYTES], int transposed)
 
 #include "printIV.h"
 //#define PRINT_KEYGEN_IV
-//#define PRINT_ENC_IV
+// #define PRINT_ENC_IV
 //#define PRINT_DEC_IV
-#define PRINT_SEEDS
+// #define PRINT_SEEDS
 // #define PRINT_KEM_IV_CHECK
 
 /*************************************************

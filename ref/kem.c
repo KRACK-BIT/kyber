@@ -8,9 +8,9 @@
 #include "indcpa.h"
 
 #include "printIV.h"
-#define PRINT_KEM_KEYGEN_CHECK
-#define PRINT_KEM_ENC_CHECK
-#define PRINT_KEM_IV
+// #define PRINT_KEM_KEYGEN_CHECK
+// #define PRINT_KEM_ENC_CHECK
+// #define PRINT_KEM_IV
 /*************************************************
 * Name:        crypto_kem_keypair
 *
