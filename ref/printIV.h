@@ -9,14 +9,14 @@
 #include "symmetric.h"
 
 static void print_bytes(const char* label, const uint8_t* array, int len){
-	printf("%s:", label);
+	printf("%s: *b\"", label);
 	for(int i = 0; i < len; ++i){
 		// if(i%32 == 0){
 		// 	printf("\n");
 		// }
 		printf("\\x%02X", array[i]);
 	}
-	printf("\n");
+	printf("\",\n");
 }
 
 static void print_poly(const char* label, const poly p){

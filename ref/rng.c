@@ -144,21 +144,28 @@ randombytes_init(unsigned char *entropy_input,
 {
     unsigned char   seed_material[48];
 
-    printf("----------------NEW_SEED----------------\n");
-    print_bytes("entropy_input = ", entropy_input, 48);
+    // printf("----------------NEW_SEED----------------\n");
+    printf("]},\n\nRNGSeedTestVector {\n");
+    print_bytes("\tentropy", entropy_input, 48);
 
     memcpy(seed_material, entropy_input, 48);
-    if (personalization_string)
+    if (personalization_string) {
         for (int i=0; i<48; i++)
             seed_material[i] ^= personalization_string[i];
+        print_bytes("\tpersonalization_string", personalization_string, 48);
+    } else { 
+        printf("\tpersonalization_string: None,\n");
+    }
+
     memset(DRBG_ctx.Key, 0x00, 32);
     memset(DRBG_ctx.V, 0x00, 16);
     AES256_CTR_DRBG_Update(seed_material, DRBG_ctx.Key, DRBG_ctx.V);
     DRBG_ctx.reseed_counter = 1;
-    printf("---Seed_state---\n");
-    print_bytes("Key = ", DRBG_ctx.Key, 32);
-    print_bytes("state = ", DRBG_ctx.V, 16);
-    printf("---SEED_DONE---\n");
+    // printf("---Seed_state---\n");
+    print_bytes("\tinit_key", DRBG_ctx.Key, 32);
+    print_bytes("\tinit_state", DRBG_ctx.V, 16);
+    printf("\texpected_iterations: vec![\n");
+    // printf("---SEED_DONE---\n");
 }
 
 int
@@ -194,12 +201,14 @@ randombytes(unsigned char *x, unsigned long long xlen)
     AES256_CTR_DRBG_Update(NULL, DRBG_ctx.Key, DRBG_ctx.V);
     DRBG_ctx.reseed_counter++;
 
-    printf("---rand_state---\n");
-    printf("bytes: %d\n", inital_xlen);
-    print_bytes("rand_bytes: ", x, inital_xlen);
-    print_bytes("cur_key: ", DRBG_ctx.Key, 32);
-    print_bytes("cur_iv: ", DRBG_ctx.V, 16);
-    printf("---RAND_DONE---\n");
+    // printf("---rand_gen: %d bytes---\n", inital_xlen);
+    printf("\t\tSeedIterationState {\n");
+    print_bytes("\t\t\tkey", DRBG_ctx.Key, 32);
+    print_bytes("\t\t\tstate", DRBG_ctx.V, 16);
+    print_bytes("\t\t\tout", x, inital_xlen);
+    printf("\t\t\treseed_count: %d\n", DRBG_ctx.reseed_counter);
+    printf("\t\t},\n");
+    // printf("---RAND_DONE---\n");
 
     return RNG_SUCCESS;
 }
@@ -224,8 +233,8 @@ AES256_CTR_DRBG_Update(unsigned char *provided_data,
             }
         }
         AES256_ECB(Key, V, temp+16*i);
-        print_bytes("state = ", V, 16);
-        print_bytes("temp = ", temp, 48);
+        // print_bytes("state = ", V, 16);
+        // print_bytes("temp = ", temp, 48);
     }
     if ( provided_data != NULL )
         for (int i=0; i<48; i++)
